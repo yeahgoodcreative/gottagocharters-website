@@ -1,0 +1,338 @@
+/* Simple Reset */
+* {
+    /* Alignment */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    /* Size */
+    width: 100%;
+    min-height: 100%;    
+}
+
+h1 {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+h2 {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h3 {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h6 {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+p {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* Layout */
+.row {
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.column {
+    /* Alignment */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+/* BREAKPOINT: Large */
+#header {
+    /* Size */
+    width: 100%;
+    height: 100px;
+
+    /* Alignment */
+    padding: 0px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    /* Colour */
+    background-color: #ffffff;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0) 75%, rgba(255, 255, 255, 0.0) 100%) */
+}
+
+#header .brand_logo {
+    /* Size */
+    height: 50px;
+
+    /* Alignment */
+    align-self: center;
+}
+
+#header .brand_name {
+    /* Alignment */
+    align-self: center;
+    margin-left: 10px;
+
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#header .brand_name span {
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#content {
+    /* Size */
+    width: 800px;
+    min-height: calc(100% - 140px);
+
+    /* Alignment */
+    align-self: center;
+    margin-top: 100px;
+}
+
+#content #introduction {
+    /* Alignment */
+    margin-top: 40px;
+}
+
+#content #vehicles {
+    /* Size */
+    width: 100%;
+
+    /* Alignment */
+    margin-top: 80px;
+}
+
+#content #vehicles .vehicles {
+    /* Size */
+    height: 350px;
+
+    /* Alignment */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+
+#content #vehicles .vehicles::-webkit-scrollbar {
+    /* Webkit */
+    -webkit-appearance: none;
+}
+
+#content #vehicles .vehicles::-webkit-scrollbar:horizontal {
+    /* Size */
+    height: 11px;
+}
+
+#content #vehicles .vehicles::-webkit-scrollbar-thumb {
+    /* Border */
+    border: 2px solid white;
+    /* border-radius: 8px; */
+
+    /* Colour */
+    background-color: #D2091B;
+}
+
+#content #vehicles .vehicles:-webkit-scrollbar-track {
+    /* Border */
+    /* border-radius: 8px; */
+    
+    /* Colour */
+    background-color: #ffffff;
+} 
+
+#content #vehicles .vehicles .divider-v {
+    /* Size */
+    height: 90%;
+
+    /* Alignment */
+    align-self: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 1px;
+
+    /* Colour */
+    background-color: lightgray;
+}
+
+#content #vehicles .vehicles .vehicle {
+    /* Size */
+    width: 300px;
+
+    /* Alignment */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    padding: 0px 30px;
+}
+
+#content #vehicles .vehicle .vehicle_thumbnail {
+    /* Size */
+    width: 300px;
+}
+
+#content #vehicles .vehicle .vehicle_features {
+    /* List */
+    list-style: none;
+}
+
+#content #contact {
+    /* Alignment */
+    margin-top: 80px;
+}
+
+#content #contact #form .hidden {
+    /* Display */
+    display: none;
+}
+
+#content #contact #form #stage1 {
+    /* Size */
+    height: 300px;
+
+    /* Alignment */
+    justify-content: center;
+}
+
+#content #contact #form #stage1 input[type=text] {
+    /* Size */
+    width: 400px;
+    height: 25px;
+
+    /* Alignment */
+    align-self: center;
+    margin-bottom: 10px;
+    padding: 0px 4px;
+
+    /* Border */
+    border-style: none;
+    border: 1px solid gray;
+}
+
+#content #contact #form #stage1 input[type=submit] {
+    /* Size */
+    width: 150px;
+    height: 27px;
+
+    /* Alignment */
+    align-self: center;
+    padding: 0px 4px;
+
+    /* Border */
+    border-width: 0px; 
+
+    /* Colour */
+    color: #ffffff;
+    background-color: #D2091B;
+}
+
+#content #contact #form #stage1 input[type=submit]:hover {
+    /* Colour */
+    background-color: #9B0A1B;
+}
+
+#content #contact #form #stage1 input.error {
+    /* Colour */
+    border-color: #D2091B;
+}
+
+#content #contact #form #success {
+    /* Size */
+    height: 300px;
+
+    /* Alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+#content #location {
+    /* Alignment */
+    margin-top: 80px;
+}
+
+#footer {
+    /* Size */
+    height: 100px;
+
+    /* Alignemnt */
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
+
+/* BREAKPOINT: Medium */
+@media screen and (max-width: 992px) {
+    #content {
+        /* Size */
+        width: 90%;
+    }
+}
+
+/* BREAKPOINT: Small */
+@media screen and (max-width: 768px) {
+    #content {
+        /* Size */
+        width: 80%;
+    }
+}
+
+/* BREAKPOINT: X-Small */
+@media screen and (max-width: 576px) {
+    #header {
+        /* Alignment */
+        justify-content: center;
+    }
+
+    #content {
+        /* Size */
+        width: 80%;
+
+        /* Text */
+        text-align: center;
+    }
+
+    #content #contact #form #stage1 input[type=text] {
+        /* Size */
+        width: 100%;
+    }
+
+}
